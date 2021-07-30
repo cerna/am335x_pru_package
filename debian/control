@@ -1,0 +1,20 @@
+Source: am335x-pru-package
+Maintainer: Jakub Fišer <jakub.fiser@eryaf.com>
+Build-Depends: cmake,
+               dh-cmake,
+               dh-cmake-compat (= 1),
+               dh-sequence-cmake,
+               debhelper-compat (= 12),
+#              Needed for mk-build-deps --host-arch $arch to correctly install all dependencies
+#              (And it's not like the libc is frivolous dependency)
+               libc6
+Standards-Version: 4.1.5
+Section: misc
+Priority: optional
+
+Package: pru-assembler
+Architecture: any
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: PRU assembler - executable
+ This package contains the PASM executable for TI AM335X PRU.

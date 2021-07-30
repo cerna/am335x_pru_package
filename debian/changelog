@@ -1,0 +1,5 @@
+am335x-pru-package (0.87) unstable; urgency=medium
+
+  * Initial release of PASM executable Debian package.
+
+ -- Jakub Fišer <jakub.fiser@eryaf.com>  Fri, 30 Jul 2021 23:00:00 +0200
